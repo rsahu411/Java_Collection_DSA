@@ -1,6 +1,4 @@
-package List;
-
-import java.util.LinkedList;
+package Collection;
 
 public class ListMain {
 

@@ -1,6 +1,4 @@
-package List;
-
-import com.sun.source.tree.ArrayAccessTree;
+package Collection;
 
 import java.util.*;
 
@@ -46,7 +44,7 @@ public class ArrayListClass {
         System.out.println("Search element in list: "+al.contains("Java"));
 
         //8. isEmpty()
-        System.out.println("List is Empty: "+al.isEmpty());
+        System.out.println("Collection.List is Empty: "+al.isEmpty());
 
         //9. for()
         System.out.print("Reading elements using for loop: ");
