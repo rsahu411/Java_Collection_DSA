@@ -79,11 +79,17 @@ public class ArrayListClass {
 
         ArrayList<Object> al1_copy = new ArrayList<>();
         al1_copy.addAll(al1);
+        al1_copy.add("G");
+        al1_copy.add("B");
         System.out.println("addAll Method: "+al1_copy);
 
-        //13. removeAll()
+        //13. removeAll() - Difference
         al1_copy.removeAll(al1);
-        System.out.println("After Removal: "+al1);
+        System.out.println("After Removal: "+al1_copy);
+
+        // retainAll()
+        al1.retainAll(al1_copy);
+        System.out.println("Intersection: "+al1);
 
         //14. Collections.sort()
         Collections.sort(al1);
@@ -103,7 +109,6 @@ public class ArrayListClass {
             System.out.println(val);
         List list = new ArrayList<>(Arrays.asList(arr));
         System.out.println("Array to arrayList: "+list);
-
 
 
     }
