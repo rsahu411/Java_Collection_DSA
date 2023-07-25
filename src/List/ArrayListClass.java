@@ -98,5 +98,15 @@ public class ArrayListClass {
         //15. Collections.shuffle()
         Collections.shuffle(al1);
         System.out.println("Shuffle arrayList: "+al1);
+
+        //16. Convert Array to ArrayList
+        String[] arr = {"Dog","cat","Monkey"};
+        for(String val : arr)
+            System.out.println(val);
+        List list = new ArrayList<>(Arrays.asList(arr));
+        System.out.println("Array to arrayList: "+list);
+
+
+
     }
 }
