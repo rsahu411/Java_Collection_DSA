@@ -1,14 +1,14 @@
 package Collection.Map;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
-public class MapClass {
+public class HashMapClass {
 
     public void map()
     {
 
-//        HashMap hashMap = new HashMap<>();
+//        HashMap hashMap = new HashMap<>(); // default capacity - 16, loadFactor - 0.75
+//        HashMap<Integer,String> hashMap = new HashMap<>(20,(float)0.80);
         HashMap<Integer,String> hashMap = new HashMap<>();
 
         //1. put() - add values

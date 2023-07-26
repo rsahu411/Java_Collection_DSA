@@ -1,7 +1,7 @@
 package Collection;
 
-import Collection.List.ArrayListClass;
-import Collection.Map.MapClass;
+import Collection.Map.HashMapClass;
+import Collection.Map.HashtableClass;
 
 public class ListMain {
 
@@ -16,7 +16,10 @@ public class ListMain {
 //        HashSetClass objectHashSet = new HashSetClass();
 //        objectHashSet.hashSet();
 
-        MapClass objectMap = new MapClass();
-        objectMap.map();
+//        HashMapClass objectMap = new HashMapClass();
+//        objectMap.map();
+
+        HashtableClass objectHashtable = new HashtableClass();
+        objectHashtable.hashTable();
     }
 }
