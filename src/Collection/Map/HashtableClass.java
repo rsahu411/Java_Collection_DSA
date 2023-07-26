@@ -42,7 +42,7 @@ public class HashtableClass {
         System.out.println("Size: "+hashtable.size());
 
         //7. isEmpty()
-        System.out.println("HashMap is empty: "+hashtable.isEmpty());
+        System.out.println("Hashtable is empty: "+hashtable.isEmpty());
 
         //8. keySet() - return set of keys
         System.out.println("Set of Keys: "+hashtable.keySet());
@@ -88,7 +88,7 @@ public class HashtableClass {
 
 
         //15. entrySet() - return combination of key and values;
-        System.out.println("EntrySet of HashMap: "+hashtable.entrySet());
+        System.out.println("EntrySet of Hashtable: "+hashtable.entrySet());
 
 
         //16. entrySet() - using forEach loop - return set of each pair

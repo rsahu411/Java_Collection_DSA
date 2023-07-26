@@ -2,6 +2,9 @@ package Collection;
 
 import Collection.Map.HashMapClass;
 import Collection.Map.HashtableClass;
+import Collection.Set.LinkedHashSetClass;
+
+import java.util.LinkedHashSet;
 
 public class ListMain {
 
@@ -16,10 +19,13 @@ public class ListMain {
 //        HashSetClass objectHashSet = new HashSetClass();
 //        objectHashSet.hashSet();
 
+        LinkedHashSetClass objectLinkedHashSet = new LinkedHashSetClass();
+        objectLinkedHashSet.linkedHashSet();
+
 //        HashMapClass objectMap = new HashMapClass();
 //        objectMap.map();
 
-        HashtableClass objectHashtable = new HashtableClass();
-        objectHashtable.hashTable();
+//        HashtableClass objectHashtable = new HashtableClass();
+//        objectHashtable.hashTable();
     }
 }
