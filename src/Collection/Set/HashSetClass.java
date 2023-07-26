@@ -1,4 +1,4 @@
-package Collection;
+package Collection.Set;
 
 import java.sql.SQLOutput;
 import java.util.HashSet;

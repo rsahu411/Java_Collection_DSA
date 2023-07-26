@@ -1,4 +1,4 @@
-package Collection;
+package Collection.List;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -8,7 +8,7 @@ public class LinkedLinkClass {
 
     public void linkedList()
     {
-      //  Collection.List list = new LinkedList();
+      //  Collection.Collection.List list = new LinkedList();
         LinkedList list = new LinkedList<>();
 
         //1. add()
@@ -19,7 +19,7 @@ public class LinkedLinkClass {
         list.add(true);
         list.add(null);
 
-        System.out.println("Linked Collection.List is: "+list);
+        System.out.println("Linked Collection.Collection.List is: "+list);
 
         //2. Size()
         System.out.println("Size of linked list is "+ list.size());
@@ -74,7 +74,7 @@ public class LinkedLinkClass {
         list1.add("B");
         list1.add("C");
 
-        System.out.println("Collection.List is "+list);
+        System.out.println("Collection.Collection.List is "+list);
 
         LinkedList newList = new LinkedList<>();
         newList.addAll(list1);
