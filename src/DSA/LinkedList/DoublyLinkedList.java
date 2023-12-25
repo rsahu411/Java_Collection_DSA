@@ -178,18 +178,26 @@ public class DoublyLinkedList {
 
 
     // 9. Reverse of doubly linked list
-//    public Node reverseDoublyLinkedList(DoublyNode head)
-//    {
-//        if(head==null)
-//        {
-//            System.out.println("List is null");
-//        }
-//
-//        DoublyNode current=head;
-//        while(current.next!=null)
-//        {
-//            current.prev=
-//
-//        }
-//    }
+    public DoublyNode reverseDoublyLinkedList(DoublyNode head)
+    {
+       if(head==null || head.next==null)
+       {
+           return head;
+       }
+
+       DoublyNode previous=null, current=head;
+
+       while(current!=null)
+       {
+           previous = current.prev;
+           current.prev = current.next;
+           current.next = previous;
+
+           // Now pre and next of node are interchange
+           // so current points to pre of current
+           current=current.prev;
+       }
+       head = previous.prev;
+       return head;
+    }
 }

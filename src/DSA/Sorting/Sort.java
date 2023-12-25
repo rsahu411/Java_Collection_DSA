@@ -232,4 +232,84 @@ public class Sort {
 
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    // Questions on Sorting
+
+
+    // Merge two sorted array into one array using extra space
+    public int[] MergeTwoSortedArrays(int[] arr1, int[] arr2, int n, int m)
+    {
+        int[] ans = new int[n+m];
+
+        int i=0;
+        int j=0;
+        int k=0;
+
+        while(i<n && j<m)
+        {
+            if(arr1[i]<arr2[j])
+            {
+                ans[k]=arr1[i];
+                i++;
+            }
+            else
+            {
+                ans[k]=arr2[j];
+                j++;
+            }
+            k++;
+        }
+
+        while(i<n)
+        {
+            ans[k]=arr1[i];
+            i++;
+            k++;
+        }
+        while(j<m)
+        {
+            ans[k]=arr2[j];
+            j++;
+            k++;
+        }
+        return ans;
+    }
+
+
+
+    // Check if array is sorted and rotated
+    // case-1: {1,3,4,6,7,8} - arr[i-1]>arr[i] -> count=1
+    // case-2: {6,7,8,1,3,4} - arr[i-1]>arr[i] -> count=1
+    // case-3: {4,4,4,4,4,4} - arr[i-1]>arr[i] -> count=0
+    // case-4: {6,8,7,1,3,4} - arr[i-1]>arr[i] -> count=2
+
+    public boolean sortedAndRotated(int[] arr, int n)
+    {
+        int count=0;
+
+        for(int i=1;i<n;i++)
+        {
+            if(arr[i-1]>arr[i])
+            {
+                count++;
+            }
+        }
+        if(arr[n-1]>arr[0])
+        {
+            count++;
+        }
+
+        return count<=1;
+    }
+
  }
